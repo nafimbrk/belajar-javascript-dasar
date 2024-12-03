@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {};
+
+      person["nama"] = "Eko Kurniawan";
+      person["alamat"] = "Indonesia";
+      person["umur"] = 30;
+
+      console.table(person);
+
+      delete person["umur"];
+
+      console.table(person);
+
+      const orang = {
+        "nama lengkap": "Eko Kurniawan",
+        alamat: "Indonesia",
+        umur: 30,
+      };
+
+      console.table(orang);
+
+      console.info(`Nama : ${orang["nama lengkap"]}`);
+      console.info(`Alamat : ${orang.alamat}`);
+      console.info(`Umur : ${orang.umur}`);
+    </script>
+  </body>
+</html>

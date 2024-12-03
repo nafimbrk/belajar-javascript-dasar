@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const sayHello = (name) => {
+      // const say = `Hello ${name}`;
+      // console.info(say);
+      // };
+
+      // const sayHello = (name) => console.info(`Hello ${name}`);
+
+      const sayHello = (name) => console.info(`Hello ${name}`); // kalo gk ada parameter tetep harus dikasih (), kalo lebih dari satu harus pake ()
+
+      sayHello("Eko");
+
+      // const sum = (first, second) => {
+      // return first + second;
+      // };
+
+      const sum = (first, second) => first + second;
+
+      console.info(sum(100, 100));
+
+      function giveMeName(callback) {
+        callback("Eko");
+      }
+
+      // anonymous function
+      // giveMeName(function (name) {
+      //    console.info(`Hello ${name}`);
+      // });
+
+      // arrow function
+      giveMeName(name => console.info(`Hello ${name}`));
+
+    </script>
+  </body>
+</html>

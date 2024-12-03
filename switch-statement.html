@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nilai = "B";
+
+      switch (nilai) {
+        case "A":
+          document.writeln("<p>Wow Anda ulus dengan baik</p>");
+          break;
+        case "B":
+        case "C":
+          document.writeln("<p>Anda Lulus</p>");
+          break;
+        case "D":
+          docunent.writeln("<p>Anda tidak Lulus</p>");
+          break;
+        default:
+          document.writeln("<p>Mungkin Anda salah jurusan</p>");
+      }
+
+      if (nilai === "A") {
+        document.writeln("<p>Wow Anda Lulus Dengan Baik</p>");
+      } else if (nilai === "B" || nilai === "C") {
+        document.writeln("<p>Anda Lulus</p>");
+      } else if (nilai === "D") {
+        document.writeln("<p>Anda Tidak Lulus</p>");
+      } else {
+        document.writeln("<p>Mungkin Anda Salah Jurusan</p>");
+      }
+    </script>
+  </body>
+</html>

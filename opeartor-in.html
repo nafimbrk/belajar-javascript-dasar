@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        fullName: "Eko",
+        lastName: "Khannedy",
+      };
+
+      if ("firstName" in person) {
+        console.info(`Hello ${person.firstName}`);
+      } else {
+        console.info("Hello");
+      }
+
+      const student = {
+        firstName: "Eko",
+        middleName: undefined,
+        lastName: "Khannedy",
+      };
+
+      if ("middleName" in student) {
+        console.info(`Hello ${student.middleName}`);
+      } else {
+        console.info("Hello Student");
+      }
+
+      const names = [null, "Kurniawan", null];
+      const result = 0 in names;
+      document.writeln(`<p>${result}</p>`);
+    </script>
+  </body>
+</html>
